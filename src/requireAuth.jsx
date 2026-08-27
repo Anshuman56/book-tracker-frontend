@@ -6,7 +6,10 @@ export default function RequireAuth({ children }) {
   const navigator = useNavigate();
   const token = getToken();
   useEffect(() => {
-    if (!token) navigator("/login");
+    if (!token) {
+      navigator("/login");
+      return null;
+    }
   });
 
   return children;
