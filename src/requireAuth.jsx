@@ -8,9 +8,10 @@ export default function RequireAuth({ children }) {
   useEffect(() => {
     if (!token) {
       navigator("/login");
-      return null;
     }
   });
-
+  if (!token) {
+    return null;
+  }
   return children;
 }
