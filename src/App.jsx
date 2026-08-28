@@ -3,6 +3,7 @@ import Home from "./home";
 import Register from "./register";
 import Login from "./login";
 import RequireAuth from "./requireAuth";
+import Books from "./books";
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
           path="/books"
           element={
             <RequireAuth>
-              <h1>books</h1>
+              <Books />
             </RequireAuth>
           }
         />

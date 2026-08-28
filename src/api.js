@@ -1,6 +1,6 @@
 import { getToken } from "./auth";
 
-async function apiFetch(path, option) {
+async function apiFetch(path, option = {}) {
   const token = getToken();
   const headers = {
     ...option.headers,
