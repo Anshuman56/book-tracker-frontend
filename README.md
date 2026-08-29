@@ -1,16 +1,34 @@
-# React + Vite
+# Note Auth FrontEnd
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+You can register, log in, and track your book you are reading right now. By giving status like want to read or reading or done with the book.
 
-Currently, two official plugins are available:
+[Live Demo]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Screenshot](001.png "Screenshot")
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Create and store books name and there author for the logged-in user. To track which book they are reading or want to read and done with that book.
+- Delete your book, create new book, and edit existing status of the book.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Built with React and Tailwind CSS.
+
+## What I Learned
+
+I learned a lot about how api can call with the fetch and what are thing you can pass in crate a data in database, like method, headers and body. And how it will give a response and if it's is Ok response then you extract the json data and if it is error extract the error or pass the response status to error object.
+
+## How to Run It Locally
+
+```bash
+git clone https://github.com/Anshuman56/book-auth-frontend
+cd book-auth-frontend
+npm install
+create the .env file similar to .env.example
+node server.js
+```
+
+## Backend code
+
+https://github.com/Anshuman56/note-auth-api

@@ -34,18 +34,24 @@ export default function Login() {
   return (
     <div className="max-w-sm mx-auto mt-16">
       <h1 className="text-2xl font-semibold mb-6">Login</h1>
-      <input
-        type="text"
-        value={email}
-        className="w-full mb-4 px-3 py-2 border rounded"
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        value={password}
-        className="w-full mb-4 px-3 py-2 border rounded"
-        onChange={(e) => setPassword(e.target.value)}
-      />
+      <label htmlFor="">
+        Email
+        <input
+          type="text"
+          value={email}
+          className="w-full mb-4 px-3 py-2 border rounded"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </label>
+      <label htmlFor="">
+        Password
+        <input
+          type="password"
+          value={password}
+          className="w-full mb-4 px-3 py-2 border rounded"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </label>
       {loading && <h2>Loading...</h2>}
       {error && <h2 className="text-sm text-red-600">{error}</h2>}
       <button
