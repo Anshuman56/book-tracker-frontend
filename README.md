@@ -1,4 +1,4 @@
-# Note Auth FrontEnd
+# Note Tracker FrontEnd
 
 You can register, log in, and track your book you are reading right now. By giving status like want to read or reading or done with the book.
 
@@ -22,11 +22,11 @@ I learned a lot about how api can call with the fetch and what are thing you can
 ## How to Run It Locally
 
 ```bash
-git clone https://github.com/Anshuman56/book-auth-frontend
-cd book-auth-frontend
+git clone https://github.com/Anshuman56/book-tracker-frontend
+cd book-tracker-frontend
 npm install
 create the .env file similar to .env.example
-node server.js
+npm run dev
 ```
 
 ## Backend code
